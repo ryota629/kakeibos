@@ -1,0 +1,71 @@
+/* 全体 */
+body{
+  background-color:#f6f6f6;
+  margin:auto 20px;
+}
+
+.header_container{
+  display: flex;
+  justify-content: space-between;
+  background-color:#ffffff;
+  box-shadow: 10px 5px 5px rgba(245,245,245,1);
+}
+
+.header-title{
+  margin: 10px;
+  font-size:35px;
+}
+
+.form-title{
+  font-size: 25px;
+}
+
+.header_container{
+  display: flex;
+  justify-content: space-between;
+}
+
+/* トップ画面 */
+.href-txt{
+  vertical-align:bottom;
+}
+
+/* ログイン画面 */
+.login_txt{
+  display: block;
+}
+
+
+/* 会員登録確認画面 */
+.content{
+  background-color: #ffffff;
+  text-align: center;
+  font-size: 18px;
+  height: 300px;
+}
+
+.butoon1{
+  text-align: center;
+}
+
+/* 家計簿一覧 */
+.paging {
+	margin-top: 10px;
+	text-align: center;
+}
+.paging li {
+	display: inline;
+  list-style: none;
+  margin: 40px;
+}
+
+.container{
+  margin-top:20px;
+}
+
+
+
+
+
+
+
