@@ -37,7 +37,7 @@ if(isset($_GET["prev"])){
   $tablename = "家計簿".$month."月";
 }
 
-
+$db = dbConnect();
 // データベースに登録した前月、今月、先月のいずれかの家計簿一覧を取り出す。
 $statement = $db->prepare("SELECT id,date,name,type,amount FROM $tablename WHERE DATE_FORMAT(date,'%Y')=$year AND user_id=? ORDER BY date");
 $statement->execute(array(

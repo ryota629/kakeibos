@@ -10,6 +10,7 @@ if(!isset($_SESSION['session'])){
   exit();
 }
 
+$db = dbConnect();
 //会員登録で入力した情報をデータベースに登録
 if(!empty($_POST)){
   $statement = $db->prepare('INSERT INTO users SET username=?,email=?,password=?,created_at=NOW()');

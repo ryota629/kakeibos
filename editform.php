@@ -7,7 +7,7 @@ $user_id = $_SESSION['id'];
 // 1.DB接続
 // 2.編集するデータを取得
 // 3.取得したデータを表示
-
+$db = dbConnect();
 $statement = $db->prepare('SELECT * FROM records WHERE id=? AND user_id=?');
 $statement->execute(array(
   $record_id,

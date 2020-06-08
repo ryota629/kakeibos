@@ -19,6 +19,8 @@ if(!empty($_POST)){
 		$error['password'] = 'blank';
 	}
 
+	$db = dbConnect();
+	
 // アカウントの重複チェック
 	if(empty($error)){
 		$users = $db->prepare('SELECT COUNT(*) AS cnt FROM users WHERE email=?');

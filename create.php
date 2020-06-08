@@ -11,6 +11,7 @@ $category = $_POST['category'];
 $amount = $_POST['amount'];
 $type = $_POST['type'];
 
+$db = dbConnect();
 // データベースに家計簿を登録
 $creat = $db->prepare('INSERT INTO records SET date=?,user_id=?,category=?,type=?,amount=?,created_at=NOW(),updated_at=NOW()');
 echo $creat->execute(array(

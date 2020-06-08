@@ -9,6 +9,7 @@ if($_COOKIE['email'] !== ''){
 	$emailuser = $_COOKIE['emailuser'];
 }
 
+$db = dbConnect();
 // ログインが正しく入力されているか確認
 if(!empty($_POST)){
 	$emailuser = $_POST['emailuser'];
